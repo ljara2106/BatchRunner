@@ -5,6 +5,7 @@
 /Users/luis/Documents/Projects/imagetool/BatchRunner/obj/Debug/net8.0/BatchRunner.MvcApplicationPartsAssemblyInfo.cache
 /Users/luis/Documents/Projects/imagetool/BatchRunner/obj/Debug/net8.0/BatchRunner.RazorAssemblyInfo.cache
 /Users/luis/Documents/Projects/imagetool/BatchRunner/obj/Debug/net8.0/BatchRunner.RazorAssemblyInfo.cs
+/Users/luis/Documents/Projects/imagetool/BatchRunner/obj/Debug/net8.0/BatchRunner.sourcelink.json
 /Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Debug/net8.0/web.config
 /Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Debug/net8.0/appsettings.Development.json
 /Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Debug/net8.0/appsettings.json

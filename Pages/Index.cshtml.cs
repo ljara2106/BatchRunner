@@ -51,7 +51,7 @@ namespace BatchRunner.Pages
             try
             {
                 var clientIp = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "Unknown";
-                var (success, output) = await _batchService.ExecuteBatchFile(selectedBatch, clientIp);
+                (bool success, string output) = await _batchService.ExecuteBatchFile(selectedBatch);
                 
                 ExecutionSuccess = success;
                 ExecutionResult = output;

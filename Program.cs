@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<BatchService>();
+builder.Services.AddHttpContextAccessor();
 
 // Add IIS Integration
 builder.Services.Configure<IISServerOptions>(options =>

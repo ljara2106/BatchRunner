@@ -29,3 +29,4 @@
 /Users/luis/Documents/Projects/imagetool/BatchRunner/obj/Release/net8.0/BatchRunner.genruntimeconfig.cache
 /Users/luis/Documents/Projects/imagetool/BatchRunner/obj/Release/net8.0/ref/BatchRunner.dll
 /Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Release/net8.0/web.config
+/Users/luis/Documents/Projects/imagetool/BatchRunner/obj/Release/net8.0/BatchRunner.sourcelink.json

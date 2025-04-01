@@ -1,19 +1,22 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 using BatchRunner.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace BatchRunner.Services
 {
     public class BatchService
     {
         private readonly ILogger<BatchService> _logger;
+        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly string _configPath;
         private readonly string _logPath;
         private BatchConfigurations? _cachedConfigs;
 
-        public BatchService(ILogger<BatchService> logger, IConfiguration configuration)
+        public BatchService(ILogger<BatchService> logger, IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
         {
             _logger = logger;
+            _httpContextAccessor = httpContextAccessor;
             _configPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Config", "batchConfig.xml");
             _logPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Logs");
             
@@ -21,6 +24,22 @@ namespace BatchRunner.Services
             {
                 Directory.CreateDirectory(_logPath);
             }
+        }
+
+        private string GetUserIPAddress()
+        {
+            var context = _httpContextAccessor.HttpContext;
+            if (context == null)
+                return "Unknown";
+
+            var forwardedFor = context.Request.Headers["X-Forwarded-For"].FirstOrDefault();
+            if (!string.IsNullOrEmpty(forwardedFor))
+            {
+                string[] ipArray = forwardedFor.Split(',');
+                return ipArray[0].Trim();
+            }
+
+            return context.Connection.RemoteIpAddress?.ToString() ?? "Unknown";
         }
 
         public BatchConfigurations LoadConfigurations()
@@ -53,8 +72,9 @@ namespace BatchRunner.Services
             return configs.UIConfig;
         }
 
-        public async Task<(bool success, string output)> ExecuteBatchFile(string batchFilePath, string clientIp)
+        public async Task<(bool success, string output)> ExecuteBatchFile(string batchFilePath)
         {
+            string clientIp = GetUserIPAddress();
             var logFile = Path.Combine(_logPath, $"batch_execution_{DateTime.Now:yyyyMMdd}.log");
             var timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
