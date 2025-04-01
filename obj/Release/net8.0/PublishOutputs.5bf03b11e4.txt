@@ -1,0 +1,17 @@
+/Users/luis/Documents/Projects/imagetool/publish/BatchRunner
+/Users/luis/Documents/Projects/imagetool/publish/publish/publish/web.config
+/Users/luis/Documents/Projects/imagetool/publish/publish/web.config
+/Users/luis/Documents/Projects/imagetool/publish/appsettings.Development.json
+/Users/luis/Documents/Projects/imagetool/publish/appsettings.json
+/Users/luis/Documents/Projects/imagetool/publish/publish/appsettings.Development.json
+/Users/luis/Documents/Projects/imagetool/publish/publish/appsettings.json
+/Users/luis/Documents/Projects/imagetool/publish/publish/BatchRunner.deps.json
+/Users/luis/Documents/Projects/imagetool/publish/publish/BatchRunner.runtimeconfig.json
+/Users/luis/Documents/Projects/imagetool/publish/publish/publish/appsettings.Development.json
+/Users/luis/Documents/Projects/imagetool/publish/publish/publish/appsettings.json
+/Users/luis/Documents/Projects/imagetool/publish/publish/publish/BatchRunner.deps.json
+/Users/luis/Documents/Projects/imagetool/publish/publish/publish/BatchRunner.runtimeconfig.json
+/Users/luis/Documents/Projects/imagetool/publish/BatchRunner.dll
+/Users/luis/Documents/Projects/imagetool/publish/BatchRunner.deps.json
+/Users/luis/Documents/Projects/imagetool/publish/BatchRunner.runtimeconfig.json
+/Users/luis/Documents/Projects/imagetool/publish/BatchRunner.pdb

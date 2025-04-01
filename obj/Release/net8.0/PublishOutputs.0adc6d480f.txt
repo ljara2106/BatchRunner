@@ -1,0 +1,8 @@
+/Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Release/net8.0/publish/BatchRunner
+/Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Release/net8.0/publish/web.config
+/Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Release/net8.0/publish/appsettings.json
+/Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Release/net8.0/publish/BatchRunner.dll
+/Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Release/net8.0/publish/BatchRunner.deps.json
+/Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Release/net8.0/publish/BatchRunner.runtimeconfig.json
+/Users/luis/Documents/Projects/imagetool/BatchRunner/bin/Release/net8.0/publish/BatchRunner.pdb

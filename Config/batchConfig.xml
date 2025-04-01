@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BatchConfigurations>
+  <UIConfig>
+    <Title>Batch Runner</Title>
+    <UIDescription>Run batch operations easily with this simple web interface.</UIDescription>
+  </UIConfig>
+  <BatchConfig>
+    <Name>Process Images</Name>
+    <Description>Process and optimize images in the specified folder</Description>
+    <BatchFilePath>C:\Scripts\process_images.bat</BatchFilePath>
+  </BatchConfig>
+  <BatchConfig>
+    <Name>Backup Database</Name>
+    <Description>Create a backup of the main database</Description>
+    <BatchFilePath>C:\Scripts\backup_db.bat</BatchFilePath>
+  </BatchConfig>
+  <BatchConfig>
+    <Name>Clean Temp Files</Name>
+    <Description>Clean temporary files from the system</Description>
+    <BatchFilePath>C:\Scripts\clean_temp.bat</BatchFilePath>
+  </BatchConfig>
+</BatchConfigurations>
